@@ -1,7 +1,5 @@
 # project-aura
 
-# Project AURA
-
 ## Overview
 Project AURA is a non-invasive, brain-computer interface (BCI) prosthetic designed to restore autonomy and finger-level function for individuals with partial hand amputations. By interpreting electroencephalography (EEG) signals in real-time, the system allows users to control individual finger articulations through mental commands, bypassing the need for residual muscle movement.
 
