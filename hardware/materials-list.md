@@ -26,5 +26,5 @@ Materials
 4.	Worn down glove
 5.	Fabric string and needle
 6.	Thin plastic string
-7.	Sissors
+7.	Scissors 
 8.	Hot glue gun
