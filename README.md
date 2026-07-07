@@ -1,33 +1,31 @@
-# project-aura
+# Project AURA
 
 ## Overview
-Project AURA is a non-invasive, brain-computer interface (BCI) prosthetic designed to restore autonomy and finger-level function for individuals with partial hand amputations. By interpreting electroencephalography (EEG) signals in real-time, the system allows users to control individual finger articulations through mental commands, bypassing the need for residual muscle movement.
+Project AURA is a non-invasive brain-computer interface (BCI) prosthetic that restores finger-level function for individuals with partial hand amputations. The system reads electroencephalography (EEG) signals in real time and maps them to individual finger movements, letting the user control the hand with trained mental commands instead of residual muscle activity.
 
 ## Problem
-- Traditional passive prosthetics offer psychological benefits but lack active movement, grip modulation, or tactile feedback.
-- Many prosthetic solutions focus on full-hand replacement, often overlooking the specific needs of four-finger amputees who retain thumb function.
-- Extended wear of prosthetic sockets often leads to heat buildup, skin irritation, and reduced stability in physically demanding conditions
+- Passive prosthetics offer psychological benefit but no active movement, grip modulation, or tactile feedback.
+- Most prosthetic development targets full-hand replacement, leaving four-finger amputees who retain thumb function underserved.
+- Extended socket wear causes heat buildup, skin irritation, and reduced stability during physical activity.
 
 ## Solution
-- Utilizes a non-invasive Emotiv EPOC X headset to detect motor intentions and map them to distinct motion profiles like grasping and pinching.
-- Employs high-torque servo motors connected to tendon-like cables to mimic natural finger articulation in a lightweight 3D-printed frame.
-- Integrated Feedback Systems:
-1. Haptic Feedback. Embedded force sensors measure grip strength and relay tactile data via vibration motors in the arm socket.
-2. Environmental Monitoring. Integrates a BME680 sensor to monitor internal socket temperature and provide adaptive cooling alerts.
+- An Emotiv EPOC X headset detects motor intent and maps it to distinct motion profiles (grasping, pinching, full closure).
+- High-torque servo motors, connected to tendon-like cables, drive finger articulation inside a lightweight 3D-printed frame.
+- Two feedback loops run alongside the core control system:
+  - **Haptic feedback** — force sensors at the fingertips measure grip strength and relay it as vibration in the arm socket.
+  - **Environmental monitoring** — a BME680 sensor tracks internal socket temperature and flags conditions for adaptive cooling.
 
 ## Technical Stack
-- Hardware: Arduino Uno R3, Emotiv EPOC X Brainwear, BME680 Environmental Sensor, Servo Motors.
-- Software: Arduino IDE, Python (python-osc), Emotiv BCI/Launcher, Visual Studio Code.
-- Fabrication: 3D Printing (lightweight ergonomic frame).
+- **Hardware:** Arduino Uno R3, Emotiv EPOC X headset, BME680 environmental sensor, servo motors
+- **Software:** Arduino IDE, Python (python-osc), Emotiv BCI / Launcher, Visual Studio Code
+- **Fabrication:** 3D-printed ergonomic frame
 
 ## Results
-- Achieved functional hand opening ("LIFT") and fist closure ("DROP") through trained EEG commands.
-- Successfully displayed live temperature, humidity, and gas resistance data on an integrated LCD screen to enhance user comfort.
-- Demonstrated that responsiveness significantly improves with precise sensor placement and consistent mental focus.
+- Trained EEG commands ("LIFT" / "DROP") reliably triggered hand opening and fist closure.
+- Live temperature, humidity, and gas resistance readings were displayed on an onboard LCD to support user comfort.
+- Responsiveness depended heavily on sensor placement and mental focus — both improved with iteration.
 
 ## Visuals
 
-## Full Code Access
-The implementation includes Python-based OSC dispatchers for mental command processing and Arduino firmware for servo control and sensor integration.
-
-Full codebase available upon request for academic or professional review.
+## Code
+Includes a Python OSC dispatcher for processing classified mental commands, plus Arduino firmware for servo control and BME680/LCD sensor integration. Full codebase available on request for academic or professional review.
