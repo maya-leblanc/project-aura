@@ -10,6 +10,7 @@ Hardware
 7.	Bausch and Lomb multipurpose saline solution for sensor nodes
 8.	10ml syringe 
 9.	Bowl for saline solution
+
 Software
 1.	Emotiv Pro
 2.	Emotiv Brain-Control Interface (BCI)
@@ -17,6 +18,7 @@ Software
 4.	Emotiv Launcher
 5.	Arduino IDE
 6.	Visual Studio Code
+
 Materials
 1.	Arduino Uno R3
 2.	Interface cable between Arduino Uno R3 and computer (USB-A to USB-B)
